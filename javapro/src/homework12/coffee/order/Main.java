@@ -17,5 +17,7 @@ public class Main {
     newBoard.deliver(2);
 
     newBoard.draw();
+
+
   }
 }

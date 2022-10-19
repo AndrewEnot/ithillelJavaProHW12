@@ -20,9 +20,11 @@ public class CoffeeOrderBoard {
     }
   }
 
-  //method deletes last added order
+  //method deletes oldest order
   public void deliver() {
-    orders.remove(orders.size() - 1);
+    if (orders.size() != 0) {
+      orders.remove(0);
+    }
   }
 
   //method deletes order by the number
